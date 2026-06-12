@@ -354,10 +354,8 @@ const DraggableChatbotWrapper = ({
     };
   }, [handleWheel, handleActivate, keepWidgetOpaque, markBackgroundScrolling]);
 
-  // Resize handle styles
-  const resizeHandleClass = "absolute bg-transparent z-20";
   const resizeHandleStyle = {
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
   };
   
   // Corner handle size (larger for easier grabbing)
@@ -373,7 +371,7 @@ const DraggableChatbotWrapper = ({
   return (
     <div
       ref={widgetRef}
-      className="scc-panel-shell fixed flex flex-col"
+      className="scc-panel-shell scc-panel-shell--floating"
       style={{
         left: `${currentPosition.x}px`,
         top: `${currentPosition.y}px`,
@@ -390,7 +388,7 @@ const DraggableChatbotWrapper = ({
       
       {/* Resize handles - Corners (larger, higher z-index) */}
       <div
-        className={`${resizeHandleClass} top-0 left-0 cursor-nwse-resize`}
+        className="scc-resize-handle scc-resize-handle--nw"
         style={{
           ...resizeHandleStyle,
           zIndex: 25,
@@ -403,7 +401,7 @@ const DraggableChatbotWrapper = ({
         }}
       />
       <div
-        className={`${resizeHandleClass} top-0 right-0 cursor-nesw-resize`}
+        className="scc-resize-handle scc-resize-handle--ne"
         style={{
           ...resizeHandleStyle,
           zIndex: 25,
@@ -416,7 +414,7 @@ const DraggableChatbotWrapper = ({
         }}
       />
       <div
-        className={`${resizeHandleClass} bottom-0 left-0 cursor-nesw-resize`}
+        className="scc-resize-handle scc-resize-handle--sw"
         style={{
           ...resizeHandleStyle,
           zIndex: 25,
@@ -429,7 +427,7 @@ const DraggableChatbotWrapper = ({
         }}
       />
       <div
-        className={`${resizeHandleClass} bottom-0 right-0 cursor-nwse-resize`}
+        className="scc-resize-handle scc-resize-handle--se"
         style={{
           ...resizeHandleStyle,
           zIndex: 25,
@@ -443,7 +441,7 @@ const DraggableChatbotWrapper = ({
       />
       {/* Edge handles (smaller, lower z-index so corners take priority) */}
       <div
-        className={`${resizeHandleClass} top-0 left-0 right-0 cursor-ns-resize`}
+        className="scc-resize-handle scc-resize-handle--n"
         style={{
           ...resizeHandleStyle,
           height: `${edgeHandleSize}px`,
@@ -457,7 +455,7 @@ const DraggableChatbotWrapper = ({
         }}
       />
       <div
-        className={`${resizeHandleClass} bottom-0 left-0 right-0 cursor-ns-resize`}
+        className="scc-resize-handle scc-resize-handle--s"
         style={{
           ...resizeHandleStyle,
           height: `${edgeHandleSize}px`,
@@ -471,7 +469,7 @@ const DraggableChatbotWrapper = ({
         }}
       />
       <div
-        className={`${resizeHandleClass} left-0 top-0 bottom-0 cursor-ew-resize`}
+        className="scc-resize-handle scc-resize-handle--w"
         style={{
           ...resizeHandleStyle,
           width: `${edgeHandleSize}px`,
@@ -485,7 +483,7 @@ const DraggableChatbotWrapper = ({
         }}
       />
       <div
-        className={`${resizeHandleClass} right-0 top-0 bottom-0 cursor-ew-resize`}
+        className="scc-resize-handle scc-resize-handle--e"
         style={{
           ...resizeHandleStyle,
           width: `${edgeHandleSize}px`,

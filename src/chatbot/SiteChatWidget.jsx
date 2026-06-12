@@ -23,6 +23,8 @@ export default function SiteChatWidget({
   routePath,
   /** When this element is on screen, the launcher FAB stays hidden (e.g. `#hero` on homepage). */
   hideFabWhenSelector,
+  /** WordPress: keep the widget visible while loading or when config fetch fails. */
+  forceMount = false,
 }) {
   const {
     supabase,
@@ -45,7 +47,8 @@ export default function SiteChatWidget({
   const isOpen = adminMode || isChatOpen;
   const [inputMessage, setInputMessage] = useState('');
   const [loading, setLoading] = useState(false);
-  const [enabled, setEnabled] = useState(false);
+  const [enabled, setEnabled] = useState(forceMount);
+  const [configLoaded, setConfigLoaded] = useState(false);
   const [chatbotName, setChatbotName] = useState('AI Assistant');
   const [appearance, setAppearance] = useState(DEFAULT_COLORS);
   const [configError, setConfigError] = useState(null);
@@ -218,7 +221,7 @@ export default function SiteChatWidget({
         if (cancelled) return;
         if (!data?.success) {
           setConfigError(data?.error ?? 'Failed to load chatbot config');
-          setEnabled(false);
+          setEnabled(forceMount);
           return;
         }
         const config = data.config;
@@ -231,14 +234,18 @@ export default function SiteChatWidget({
       } catch (error) {
         if (!cancelled) {
           setConfigError(error.message ?? 'Failed to load chatbot config');
-          setEnabled(false);
+          setEnabled(forceMount);
+        }
+      } finally {
+        if (!cancelled) {
+          setConfigLoaded(true);
         }
       }
     })();
     return () => {
       cancelled = true;
     };
-  }, [siteId, supabase]);
+  }, [siteId, supabase, forceMount]);
 
   useEffect(() => {
     if (!isOpen) {
@@ -492,7 +499,10 @@ export default function SiteChatWidget({
     },
   };
 
-  if (!adminMode && !enabled) {
+  const shouldRender =
+    adminMode || enabled || (forceMount && (!configLoaded || !!configError));
+
+  if (!shouldRender) {
     if (configError) {
       console.warn('Site chatbot disabled:', configError);
     }
@@ -527,13 +537,13 @@ export default function SiteChatWidget({
             <div
               className={`scc-panel-shell ${
                 adminMode
-                  ? 'w-full h-full'
+                  ? 'scc-panel-shell--fill'
                   : isMobile
-                    ? `scc-panel-shell--mobile fixed left-0 right-0 w-full${
+                    ? `scc-panel-shell--mobile scc-panel-shell--mobile-viewport${
                         isKeyboardOpen ? ' scc-panel-shell--keyboard-open' : ''
                       }`
-                    : 'fixed bottom-6 right-6 w-80 h-[653px]'
-              } z-[9999]`}
+                    : 'scc-panel-shell--anchored'
+              }`}
               style={{
                 '--scc-fab-accent': orgColors.primary,
                 ...(isMobile && !adminMode

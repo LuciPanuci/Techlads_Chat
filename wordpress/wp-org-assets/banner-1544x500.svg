@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1544" height="500" viewBox="0 0 1544 500" role="img" aria-labelledby="banner-title banner-desc">
+  <title id="banner-title">Site Context Chat</title>
+  <desc id="banner-desc">Your content. Your Claude key. Your data.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3330"/>
+      <stop offset="55%" stop-color="#243d39"/>
+      <stop offset="100%" stop-color="#1a2f2c"/>
+    </linearGradient>
+
+    <linearGradient id="glow" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#5DA399" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#5DA399" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <symbol id="chatbot-mark" viewBox="0 0 200 200">
+      <path
+        fill="#5DA399"
+        d="M100 18
+           C148 18 178 48 178 96
+           C178 132 158 162 118 172
+           C108 175 98 174 88 168
+           L42 198
+           L58 158
+           C36 142 22 122 22 96
+           C22 48 52 18 100 18
+           Z"
+      />
+      <rect x="86" y="6" width="8" height="16" rx="4" fill="#5DA399"/>
+      <circle cx="90" cy="4" r="6" fill="#5DA399"/>
+      <rect x="46" y="78" width="108" height="30" rx="15" fill="#FFFFFF"/>
+      <circle cx="74" cy="93" r="11" fill="#F29F05"/>
+      <circle cx="126" cy="93" r="11" fill="#F29F05"/>
+      <path
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="10"
+        stroke-linecap="round"
+        d="M62 128 C78 148 122 148 138 128"
+      />
+    </symbol>
+  </defs>
+
+  <rect width="1544" height="500" fill="url(#bg)"/>
+  <ellipse cx="1240" cy="250" rx="440" ry="320" fill="url(#glow)"/>
+
+  <g fill="#5DA399" opacity="0.08">
+    <circle cx="1360" cy="80" r="4"/>
+    <circle cx="1420" cy="140" r="4"/>
+    <circle cx="1300" cy="180" r="4"/>
+    <circle cx="1440" cy="360" r="4"/>
+    <circle cx="1280" cy="400" r="4"/>
+  </g>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+    <text x="96" y="176" fill="#FFFFFF" font-size="68" font-weight="700" letter-spacing="-1">Site Context Chat</text>
+    <text x="96" y="248" fill="#C8E6E1" font-size="34" font-weight="400">Your content. Your Claude key. Your data.</text>
+
+    <g transform="translate(96, 296)">
+      <rect x="0" y="0" width="216" height="56" rx="28" fill="#5DA399" fill-opacity="0.22" stroke="#5DA399" stroke-opacity="0.45"/>
+      <text x="108" y="38" fill="#E8F5F3" font-size="24" font-weight="600" text-anchor="middle">Open Source</text>
+
+      <rect x="236" y="0" width="116" height="56" rx="28" fill="#F29F05" fill-opacity="0.16" stroke="#F29F05" stroke-opacity="0.5"/>
+      <text x="294" y="38" fill="#FFE8C2" font-size="24" font-weight="600" text-anchor="middle">BYOK</text>
+
+      <rect x="372" y="0" width="176" height="56" rx="28" fill="#5DA399" fill-opacity="0.22" stroke="#5DA399" stroke-opacity="0.45"/>
+      <text x="460" y="38" fill="#E8F5F3" font-size="24" font-weight="600" text-anchor="middle">Supabase</text>
+
+      <rect x="568" y="0" width="148" height="56" rx="28" fill="#5DA399" fill-opacity="0.22" stroke="#5DA399" stroke-opacity="0.45"/>
+      <text x="642" y="38" fill="#E8F5F3" font-size="24" font-weight="600" text-anchor="middle">Claude</text>
+    </g>
+  </g>
+
+  <use href="#chatbot-mark" x="1096" y="50" width="400" height="400"/>
+  <ellipse cx="1296" cy="436" rx="144" ry="20" fill="#000000" opacity="0.22"/>
+</svg>

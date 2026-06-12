@@ -1,0 +1,13 @@
+# Never ship local Supabase link artifacts
+supabase/.temp/
+supabase/.branches/
+
+# Source / dev-only (dist + bin + supabase are published via package.json "files")
+src/
+wordpress/
+docs/
+scripts/
+.env*
+*.local
+node_modules/
+.DS_Store

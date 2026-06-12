@@ -49,7 +49,7 @@ export default function ContactFormModal({
             </p>
           </div>
           <button type="button" className="scc-chat-panel__icon-btn" onClick={onClose} aria-label="Close">
-            <FaTimes className="h-3.5 w-3.5" />
+            <FaTimes className="scc-icon-sm" />
           </button>
         </div>
 
@@ -109,10 +109,10 @@ export default function ContactFormModal({
             </button>
             <button type="submit" className="scc-inquiry-modal__submit" disabled={submitting}>
               {submitting ? (
-                <FaSpinner className="animate-spin h-4 w-4" />
+                <FaSpinner className="scc-spinner scc-icon-md" />
               ) : (
                 <>
-                  <FaPaperPlane className="h-3.5 w-3.5" />
+                  <FaPaperPlane className="scc-icon-sm" />
                   Send inquiry
                 </>
               )}

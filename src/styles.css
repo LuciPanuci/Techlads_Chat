@@ -222,6 +222,33 @@
   }
 }
 
+/* Icons & spinners (no Tailwind dependency) */
+.scc-icon-sm {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+}
+
+.scc-icon-md {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.scc-spinner {
+  display: inline-block;
+  border-radius: 9999px;
+  border: 2px solid rgba(148, 163, 184, 0.35);
+  border-top-color: currentColor;
+  animation: scc-spin 0.8s linear infinite;
+}
+
+@keyframes scc-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Expanded chat panel — matches FAB glass / slate hero aesthetic */
 .scc-panel-shell {
   --scc-fab-accent: #5da399;
@@ -239,9 +266,93 @@
   color: #e2e8f0;
 }
 
+.scc-panel-shell--floating {
+  position: fixed;
+}
+
+.scc-panel-shell--anchored {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 20rem;
+  height: 40.8125rem;
+  z-index: 9999;
+}
+
 .scc-panel-shell--mobile {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.scc-panel-shell--mobile-viewport {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.scc-panel-shell--fill {
+  width: 100%;
+  height: 100%;
+}
+
+.scc-resize-handle {
+  position: absolute;
+  background: transparent;
+  z-index: 20;
+}
+
+.scc-resize-handle--nw {
+  top: 0;
+  left: 0;
+  cursor: nwse-resize;
+}
+
+.scc-resize-handle--ne {
+  top: 0;
+  right: 0;
+  cursor: nesw-resize;
+}
+
+.scc-resize-handle--sw {
+  bottom: 0;
+  left: 0;
+  cursor: nesw-resize;
+}
+
+.scc-resize-handle--se {
+  bottom: 0;
+  right: 0;
+  cursor: nwse-resize;
+}
+
+.scc-resize-handle--n {
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: ns-resize;
+}
+
+.scc-resize-handle--s {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: ns-resize;
+}
+
+.scc-resize-handle--w {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  cursor: ew-resize;
+}
+
+.scc-resize-handle--e {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: ew-resize;
 }
 
 /* When the OS keyboard is open, the panel is pinned to the visual viewport — skip home-indicator padding */

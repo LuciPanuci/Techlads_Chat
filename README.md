@@ -127,6 +127,12 @@ Requires `Authorization: Bearer <SUPABASE_ANON_KEY>`.
 - Model window: last 20 messages sent to Claude
 - `sessionId` persisted in `localStorage` per site
 
+## WordPress
+
+A frontend plugin lives in [`wordpress/`](wordpress/README.md). Build assets with `npm run build:wp`, zip `wordpress/site-context-chat/`, and install via **Plugins → Upload**.
+
+**Backend tutorial (WP-friendly):** [docs/BACKEND-SETUP.md](docs/BACKEND-SETUP.md) — dashboard for SQL & secrets, CLI for function deploy.
+
 ## License
 
 MIT

@@ -59,7 +59,7 @@ export default function ChatPanel({
               className="scc-chat-panel__icon-btn"
               title="Start new chat"
             >
-              <FaPlus className="h-3.5 w-3.5" />
+              <FaPlus className="scc-icon-sm" />
             </button>
           )}
           {!adminMode && (
@@ -72,7 +72,7 @@ export default function ChatPanel({
               className="scc-chat-panel__icon-btn"
               aria-label="Close chat"
             >
-              <FaTimes className="h-3.5 w-3.5" />
+              <FaTimes className="scc-icon-sm" />
             </button>
           )}
         </div>
@@ -151,7 +151,7 @@ export default function ChatPanel({
             className="scc-chat-panel__send"
             aria-label="Send message"
           >
-            {loading ? <FaSpinner className="animate-spin h-4 w-4" /> : <FaPaperPlane className="h-3.5 w-3.5" />}
+            {loading ? <FaSpinner className="scc-spinner scc-icon-md" /> : <FaPaperPlane className="scc-icon-sm" />}
           </button>
         </div>
       </div>

@@ -1,7 +1,15 @@
 {
   "name": "site-context-chat",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "Markdown-backed site chatbot with Supabase Edge Functions, admin panel, and draggable widget.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuciPanuci/Techlads_Chat.git"
+  },
+  "homepage": "https://github.com/LuciPanuci/Techlads_Chat#readme",
+  "bugs": {
+    "url": "https://github.com/LuciPanuci/Techlads_Chat/issues"
+  },
   "keywords": [
     "chatbot",
     "anthropic",
@@ -26,13 +34,17 @@
   "files": [
     "dist",
     "bin",
-    "supabase"
+    "supabase/config.toml",
+    "supabase/functions",
+    "supabase/migrations"
   ],
   "bin": {
     "site-context-chat": "./bin/site-context-chat.mjs"
   },
   "scripts": {
     "build": "vite build && cp src/index.d.ts dist/index.d.ts",
+    "build:wp": "vite build --config vite.wp.config.ts --mode widget && vite build --config vite.wp.config.ts --mode admin",
+    "build:wp:zip": "npm run build:wp && cd wordpress && zip -r site-context-chat.zip site-context-chat",
     "dev": "vite build --watch",
     "prepublishOnly": "npm run build",
     "test:edge": "node scripts/test-edge.mjs"

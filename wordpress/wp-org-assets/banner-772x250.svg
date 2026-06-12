@@ -1,0 +1,118 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 772 250">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        opacity: 0.08;
+      }
+
+      .cls-3, .cls-9 {
+        fill: #5da399;
+      }
+
+      .cls-10, .cls-12, .cls-13, .cls-4, .cls-5 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        font-size: 34px;
+        letter-spacing: -0.01em;
+      }
+
+      .cls-14, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-10, .cls-12, .cls-4 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        font-size: 17px;
+        fill: #c8e6e1;
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-6 {
+        letter-spacing: -0.09em;
+      }
+
+      .cls-7 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-8 {
+        letter-spacing: -0.07em;
+      }
+
+      .cls-9 {
+        fill-opacity: 0.22;
+        stroke: #5da399;
+        stroke-opacity: 0.45;
+      }
+
+      .cls-10, .cls-12 {
+        font-size: 12px;
+      }
+
+      .cls-10 {
+        fill: #e8f5f3;
+      }
+
+      .cls-11, .cls-15 {
+        fill: #f29f05;
+      }
+
+      .cls-11 {
+        fill-opacity: 0.16;
+        stroke: #f29f05;
+        stroke-opacity: 0.5;
+      }
+
+      .cls-12 {
+        fill: #ffe8c2;
+      }
+
+      .cls-13 {
+        opacity: 0.22;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-124.84" y1="636.46" x2="-123.84" y2="635.46" gradientTransform="matrix(772, 0, 0, -250, 96375, 159114)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e3330"/>
+      <stop offset="0.55" stop-color="#243d39"/>
+      <stop offset="1" stop-color="#1a2f2c"/>
+    </linearGradient>
+  </defs>
+  <rect class="cls-1" width="772" height="250"/>
+  <g class="cls-2">
+    <circle class="cls-3" cx="680" cy="40" r="2"/>
+    <circle class="cls-3" cx="710" cy="70" r="2"/>
+    <circle class="cls-3" cx="650" cy="90" r="2"/>
+    <circle class="cls-3" cx="720" cy="180" r="2"/>
+    <circle class="cls-3" cx="640" cy="200" r="2"/>
+  </g>
+  <g>
+    <text class="cls-4" transform="translate(48 88)">Site Context Chat</text>
+    <text class="cls-5" transform="translate(48 124)"><tspan class="cls-6">Y</tspan><tspan x="9.78" y="0">our content.</tspan><tspan class="cls-7" x="99.56" y="0"> </tspan><tspan class="cls-6" x="103.98" y="0">Y</tspan><tspan x="113.75" y="0">our Claude ke</tspan><tspan class="cls-8" x="219.6" y="0">y</tspan><tspan x="226.84" y="0">.</tspan><tspan class="cls-7" x="231.56" y="0"> </tspan><tspan class="cls-6" x="235.97" y="0">Y</tspan><tspan x="245.75" y="0">our data.</tspan></text>
+    <g>
+      <path class="cls-9" d="M62,148h80a14,14,0,0,1,14,14h0a14,14,0,0,1-14,14H62a14,14,0,0,1-14-14h0A14,14,0,0,1,62,148Z"/>
+      <text class="cls-10" transform="translate(64.66 167)">Open Source</text>
+      <path class="cls-11" d="M180,148h30a14,14,0,0,1,14,14h0a14,14,0,0,1-14,14H180a14,14,0,0,1-14-14h0A14,14,0,0,1,180,148Z"/>
+      <text class="cls-12" transform="translate(177.67 167)">BYOK</text>
+      <path class="cls-9" d="M248,148h60a14,14,0,0,1,14,14h0a14,14,0,0,1-14,14H248a14,14,0,0,1-14-14h0A14,14,0,0,1,248,148Z"/>
+      <text class="cls-10" transform="translate(249.66 167)">Supabase</text>
+      <path class="cls-9" d="M330,148h52a14,14,0,0,1,14,14h0a14,14,0,0,1-14,14H330a14,14,0,0,1-14-14h0A14,14,0,0,1,330,148Z"/>
+      <text class="cls-10" transform="translate(345.66 167)">Claude</text>
+    </g>
+  </g>
+  <ellipse class="cls-13" cx="648" cy="218" rx="72" ry="10"/>
+  <path class="cls-3" d="M597,182c2.05-2.87,4-5.43,5.76-8.09a43.09,43.09,0,0,0,6.81-17.53,5.53,5.53,0,0,0-1.23-4.15c-8.91-9.21-14.48-19.92-15.69-32.81a5.78,5.78,0,0,0-2.42-3.37c-4.69-3.4-8.13-7.41-9-13.44-2-13.42,10.1-22.47,19.6-22.79a7,7,0,0,0,5.43-2.72c10.92-12.29,24.35-19.64,41-20.37,2.34-.11,3.25-1,3.17-3.4-.15-5,0-10-.06-15.07a4.29,4.29,0,0,1,2.69-4.41,7.3,7.3,0,0,0,4.49-5.77c1.06-5.81,6.19-6.21,10.81-5.16,4,.9,6.1,5.56,4.62,9.33a8.73,8.73,0,0,1-9.58,5,4.85,4.85,0,0,0-6.27,4.6c-.09,4.09,0,8.19,0,12.28,0,1.64.57,2.54,2.4,2.69,15.93,1.32,28.83,8.57,39.33,20.38A7.12,7.12,0,0,0,704,79.86c9,.64,18.41,9.09,19,18,.41,6.6-1.58,12.22-6.87,16.19a10,10,0,0,0-4.18,7.57c-1.63,13.09-7.87,23.91-17.6,32.67-17.81,16.05-38.46,19.48-61.12,13.3a4.15,4.15,0,0,0-4.65,1.12A47.41,47.41,0,0,1,600,182,29.51,29.51,0,0,1,597,182Z"/>
+  <path class="cls-14" d="M651.94,86h48.83a16.52,16.52,0,0,1,10.15,3.3c4.23,3.15,6.26,7.34,5.34,12.63-1,5.45-4.89,8.43-9.56,10.4a17.37,17.37,0,0,1-6.54,1.1q-48.27.09-96.54,0A16.36,16.36,0,0,1,593,110c-8.36-6.66-7-18,2.85-22.24a20,20,0,0,1,7.53-1.63C619.57,86,635.76,86,651.94,86Zm-25.71,23.49a9.65,9.65,0,0,0,9.52-9.87,9.52,9.52,0,1,0-19,0A9.59,9.59,0,0,0,626.23,109.53Zm53.53-19.48a9.37,9.37,0,0,0-9.46,9.82,9.52,9.52,0,1,0,19-.11A9.41,9.41,0,0,0,679.76,90.05Z"/>
+  <path class="cls-14" d="M629.86,126.25l4.33,3.28c11.82,8.9,30.2,6.58,39.43-5,.69-.86,1.19-1.89,1.9-2.74.54-.65,1.44-1.68,1.91-1.55a3.59,3.59,0,0,1,2,1.9c2.62,5.92.81,12.8-4.55,17.67-11.32,10.31-30.09,9.77-40.78-1.19C631,135.4,629.4,131.62,629.86,126.25Z"/>
+  <path class="cls-15" d="M626.23,109.53a9.59,9.59,0,0,1-9.52-9.84,9.52,9.52,0,1,1,19,0A9.65,9.65,0,0,1,626.23,109.53Z"/>
+  <path class="cls-15" d="M679.76,90.05a9.41,9.41,0,0,1,9.58,9.71,9.52,9.52,0,1,1-19,.11A9.37,9.37,0,0,1,679.76,90.05Z"/>
+</svg>

@@ -4,6 +4,11 @@ node_modules/
 # Build output (published to npm via prepublishOnly; not tracked in git)
 dist/
 
+# WordPress bundles (regenerate with npm run build:wp)
+wordpress/site-context-chat/assets/
+!wordpress/site-context-chat/assets/.gitkeep
+wordpress/site-context-chat.zip
+
 # Environment & secrets
 .env
 .env.*

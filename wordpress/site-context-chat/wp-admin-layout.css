@@ -1,0 +1,30 @@
+/* Full-width admin mount on WordPress pages */
+.scc-wp-admin-mount {
+  min-height: 70vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scc-wp-admin-mount .scc-admin {
+  min-height: 70vh;
+}
+
+.scc-wp-loading,
+.scc-wp-notice {
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background: #f6f7f7;
+  border: 1px solid #dcdcde;
+}
+
+.scc-wp-notice {
+  background: #fff8e5;
+  border-color: #dba617;
+}
+
+#scc-root {
+  position: relative;
+  z-index: 99999;
+}
