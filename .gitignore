@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output (published to npm via prepublishOnly; not tracked in git)
+dist/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs & caches
+*.log
+npm-debug.log*
+.npm
+.cache/
+
+# Supabase local/link artifacts (contain project refs and DB URLs)
+supabase/.temp/
+supabase/.branches/
+
+# Local overrides
+*.local

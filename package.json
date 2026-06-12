@@ -1,0 +1,58 @@
+{
+  "name": "site-context-chat",
+  "version": "0.1.0",
+  "description": "Markdown-backed site chatbot with Supabase Edge Functions, admin panel, and draggable widget.",
+  "keywords": [
+    "chatbot",
+    "anthropic",
+    "claude",
+    "react",
+    "supabase",
+    "edge-functions"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/site-context-chat.umd.cjs",
+  "module": "./dist/site-context-chat.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/site-context-chat.js",
+      "require": "./dist/site-context-chat.umd.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles.css": "./dist/site-context-chat.css"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "supabase"
+  ],
+  "bin": {
+    "site-context-chat": "./bin/site-context-chat.mjs"
+  },
+  "scripts": {
+    "build": "vite build && cp src/index.d.ts dist/index.d.ts",
+    "dev": "vite build --watch",
+    "prepublishOnly": "npm run build",
+    "test:edge": "node scripts/test-edge.mjs"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "@supabase/supabase-js": "^2"
+  },
+  "dependencies": {
+    "react-icons": "^5"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5",
+    "vite": "^5"
+  }
+}
