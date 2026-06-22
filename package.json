@@ -1,6 +1,6 @@
 {
   "name": "site-context-chat",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Markdown-backed site chatbot with Supabase Edge Functions, admin panel, and draggable widget.",
   "repository": {
     "type": "git",

@@ -29,7 +29,7 @@ This writes self-contained bundles to `wordpress/site-context-chat/assets/`:
 4. Create a page (e.g. slug `chat-admin`) with shortcode:
 
    ```
-   [site_context_chat_admin]
+   [techlads_chat_admin]
    ```
 
 5. Use **Open chat admin** in plugin settings to manage context (unlock with `SITE_CHAT_ADMIN_SECRET`).
@@ -39,9 +39,8 @@ This writes self-contained bundles to `wordpress/site-context-chat/assets/`:
 Under **Settings → Site Context Chat → Appearance**:
 
 - **Theme** — Dark, Light, or Auto (follows visitor OS)
-- **Custom CSS** — optional overrides; scope to `#scc-root` (widget) or `#scc-admin-root` (admin page)
 
-Expand **CSS examples** on the settings page for copy-paste snippets (brand accent, launcher position, rounded panels, etc.).
+Brand colours and welcome message are configured in the chat admin panel (Supabase).
 
 ## Test checklist
 

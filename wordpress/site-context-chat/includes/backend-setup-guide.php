@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 /**
  * @param string $admin_url Chat admin page URL for inline links.
  */
-function site_context_chat_render_backend_setup_guide(string $admin_url): void {
+function techlads_render_backend_setup_guide(string $admin_url): void {
     $repo = 'https://github.com/LuciPanuci/Techlads_Chat';
     ?>
     <div class="scc-setup-guide">
@@ -47,9 +47,9 @@ function site_context_chat_render_backend_setup_guide(string $admin_url): void {
                     <li><?php echo esc_html__('Plugins → Add New → Upload Plugin → Install → Activate.', 'site-context-chat'); ?></li>
                     <li>
                         <?php echo esc_html__('Pages → Add New → slug e.g. chat-admin → Shortcode block:', 'site-context-chat'); ?>
-                        <code>[site_context_chat_admin]</code> → <?php echo esc_html__('Publish.', 'site-context-chat'); ?>
+                        <code>[techlads_chat_admin]</code> → <?php echo esc_html__('Publish.', 'site-context-chat'); ?>
                     </li>
-                    <li><?php echo esc_html__('Optional now: Theme and Custom CSS on this settings page.', 'site-context-chat'); ?></li>
+                    <li><?php echo esc_html__('Optional now: pick Theme (Dark / Light / Auto) on this settings page.', 'site-context-chat'); ?></li>
                 </ol>
                 <p><em><?php echo esc_html__('The chat button will not reply until Part 2 is complete — that is expected.', 'site-context-chat'); ?></em></p>
             </div>
@@ -186,7 +186,7 @@ supabase functions deploy site-chat-admin</pre>
             <div class="scc-setup-guide__body">
                 <ol>
                     <li><?php echo esc_html__('Chat admin → Context → paste site markdown (services, FAQs) → Save.', 'site-context-chat'); ?></li>
-                    <li><?php echo esc_html__('Appearance tab for colours and welcome message (or Custom CSS above).', 'site-context-chat'); ?></li>
+                    <li><?php echo esc_html__('Appearance tab for colours and welcome message.', 'site-context-chat'); ?></li>
                     <li><?php echo esc_html__('Test tab — send a message before go-live.', 'site-context-chat'); ?></li>
                 </ol>
             </div>

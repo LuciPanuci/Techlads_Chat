@@ -5,7 +5,7 @@ import './styles.css';
 
 function mountAdmin() {
   const root = document.getElementById('scc-admin-root');
-  const config = window.sccAdminConfig;
+  const config = window.techladsAdminConfig;
 
   if (!root) {
     return;

@@ -1,10 +1,10 @@
 === Site Context Chat ===
-Contributors: lucipanuci
+Contributors: lucipanuci, luciantstoian
 Tags: chatbot, ai, claude, customer support, supabase
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 0.1.5
+Stable tag: 0.1.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,8 +25,7 @@ This plugin is the **WordPress frontend**. You connect it to a [Supabase](https:
 = Features =
 
 * Floating chat widget (dark, light, or auto theme)
-* Custom CSS for branding
-* Chat admin page via shortcode `[site_context_chat_admin]`
+* Chat admin page via shortcode `[techlads_chat_admin]`
 * Train the bot with **markdown** site context (services, FAQs, how you work)
 * Conversation history stored in **your** Supabase database
 * Inquiry / contact handoff when the visitor is ready
@@ -49,7 +48,7 @@ The chatbot **will not reply** until you complete the backend setup (Supabase pr
 
 1. Install and activate **Site Context Chat**.
 2. **Settings → Site Context Chat** — follow the embedded **Setup guide**.
-3. Create a page with slug `chat-admin` and a **Shortcode** block: `[site_context_chat_admin]`
+3. Create a page with slug `chat-admin` and a **Shortcode** block: `[techlads_chat_admin]`
 4. Complete backend setup (Supabase + Claude) — see Setup guide Part 2.
 5. Paste **Supabase URL** and **anon key** in plugin settings → enable widget → Save.
 6. Open chat admin → unlock with your admin secret → paste site markdown → Save.
@@ -104,6 +103,10 @@ No. The plugin is free (GPL). You pay Supabase and Anthropic directly for usage.
 
 == Changelog ==
 
+= 0.1.6 =
+* Remove custom CSS field (WordPress.org policy)
+* Prefix plugin identifiers with techlads_
+
 = 0.1.5 =
 * Embedded setup guide in plugin settings
 * Theme: dark, light, auto
@@ -125,6 +128,9 @@ No. The plugin is free (GPL). You pay Supabase and Anthropic directly for usage.
 * Initial release: widget, admin shortcode, Supabase connection settings
 
 == Upgrade Notice ==
+
+= 0.1.6 =
+Admin shortcode renamed to [techlads_chat_admin]. Update any pages using the old shortcode.
 
 = 0.1.5 =
 Adds in-plugin setup documentation, theme selector, and custom CSS.

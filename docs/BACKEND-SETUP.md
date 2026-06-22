@@ -34,7 +34,7 @@ Get the WordPress plugin installed first (a few minutes), then connect your back
 3. Add a **Shortcode** block (not a plain paragraph) containing:
 
    ```
-   [site_context_chat_admin]
+   [techlads_chat_admin]
    ```
 
 4. **Publish**.
@@ -45,7 +45,7 @@ Get the WordPress plugin installed first (a few minutes), then connect your back
 
 1. **Settings → Site Context Chat**.
 2. Skim the page — you’ll paste your Supabase URL and anon key here after Part 2.
-3. Optional now: pick **Theme** (Dark / Light / Auto) and explore **Custom CSS** examples.
+3. Optional now: pick **Theme** (Dark / Light / Auto) on the settings page.
 
 <!-- screenshot: wp-plugin-settings-empty.png -->
 
@@ -234,7 +234,7 @@ Back to **Settings → Site Context Chat**:
 
 1. Gather site copy as markdown (services, FAQs, how you work).
 2. Chat admin → **Context** → paste or import `.md` → **Save**.
-3. **Appearance** → colours, welcome message (or use plugin **Custom CSS**).
+3. **Appearance** → colours and welcome message.
 4. **Test** tab again before announcing it live.
 
 Bundle markdown from a folder (optional, from a machine with Node):
@@ -278,7 +278,7 @@ We recommend the CLI for Step 2.4 even if everything else is dashboard-based.
 ```
 Part 1 — WordPress
 [ ] Plugin installed + activated
-[ ] Admin page published with [site_context_chat_admin] shortcode block
+[ ] Admin page published with [techlads_chat_admin] shortcode block
 
 Part 2 — Backend
 [ ] Supabase project created

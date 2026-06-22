@@ -5,7 +5,7 @@ import './styles.css';
 
 function mountWidget() {
   const root = document.getElementById('scc-root');
-  const config = window.sccConfig;
+  const config = window.techladsWidgetConfig;
 
   if (!root || !config?.url || !config?.anonKey) {
     return;
